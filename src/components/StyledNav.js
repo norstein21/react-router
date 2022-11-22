@@ -8,12 +8,15 @@ const StyledNavbar = () => {
         className={({isActive})=>(isActive ? 'link active' : 'link')}>
             Beranda
         </NavLink>
-        <NavLink to={'/coba'}
+        <NavLink to={'coba'}
         className={({isActive})=>(isActive ? 'link active' : 'link')}>
         Tentang Kita</NavLink>
-        <NavLink to={'/barang'}
+        <NavLink to={'barang'}
         className={({isActive})=>(isActive ? 'link active' : 'link')}
         >Produk</NavLink>
+        <NavLink to={'signin'}
+        className={({isActive})=>(isActive ? 'link active' : 'link')}
+        >Sign In</NavLink>
     </nav>
   )
 }
